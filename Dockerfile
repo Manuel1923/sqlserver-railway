@@ -1,8 +1,7 @@
-FROM mcr.microsoft.com/azure-sql-edge
+FROM mcr.microsoft.com/mssql/server:2019-latest
 
+ENV SA_PASSWORD=TuPassword123!
 ENV ACCEPT_EULA=Y
-ENV MSSQL_SA_PASSWORD=TuPasswordSegura123!
-ENV MSSQL_PID=Developer
 
 EXPOSE 1433
 
