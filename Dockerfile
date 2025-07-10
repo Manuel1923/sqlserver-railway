@@ -1,8 +1,9 @@
-FROM mcr.microsoft.com/mssql/server:2022-lts-ubuntu-22.04
+FROM mcr.microsoft.com/azure-sql-edge
 
 ENV ACCEPT_EULA=Y
-ENV SA_PASSWORD=TuPasswordSegura123!
-ENV MSSQL_PID=Express
+ENV MSSQL_SA_PASSWORD=TuPasswordSegura123!
+ENV MSSQL_PID=Developer
+
 EXPOSE 1433
 
 CMD ["/opt/mssql/bin/sqlservr"]
