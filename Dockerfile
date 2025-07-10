@@ -3,15 +3,14 @@ FROM mcr.microsoft.com/azure-sql-edge
 # Aceptar el acuerdo de licencia
 ENV ACCEPT_EULA=Y
 
-# Contraseña para el usuario sa (System Administrator)
-# Debe ser una contraseña segura: mínimo 8 caracteres, incluyendo mayúsculas, minúsculas, números y símbolos
+# Contraseña para el usuario sa (debe ser fuerte y válida)
 ENV MSSQL_SA_PASSWORD=TuContraseñaSegura123!
 
-# Tipo de licencia o edición de SQL Server, en este caso Developer
+# Tipo de edición
 ENV MSSQL_PID=Developer
 
-# Puerto que se expondrá para conexiones externas
+# Puerto expuesto
 EXPOSE 1433
 
-# Comando que se ejecuta al iniciar el contenedor
+# Comando para iniciar SQL Server
 CMD ["/opt/mssql/bin/sqlservr"]
