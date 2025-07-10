@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/mssql/server:2022-lts-ubuntu-20.04
+FROM mcr.microsoft.com/mssql/server:2019-latest
 
 ENV SA_PASSWORD=TuPassword123!
 ENV ACCEPT_EULA=Y
