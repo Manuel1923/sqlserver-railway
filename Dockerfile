@@ -4,7 +4,7 @@ FROM mcr.microsoft.com/azure-sql-edge
 ENV ACCEPT_EULA=Y
 
 # Contraseña para el usuario sa (debe ser fuerte y válida)
-ENV MSSQL_SA_PASSWORD=TuContraseñaSegura123!
+ENV MSSQL_SA_PASSWORD=123
 
 # Tipo de edición
 ENV MSSQL_PID=Developer
